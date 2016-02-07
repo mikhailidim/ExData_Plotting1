@@ -25,4 +25,13 @@ web site</a>:
 <li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
-
+## How it works
+ Script plotting1.R  produce steps as below:
+  1. Check if source data is in work directory.
+  2. If not it downloads and unpacks archive from the internet.
+  3. Script loads text file as data frame
+  4. Keeps data for Feb 1 and 2 2007 only.
+  5. changes Date and Time variables class to Date and POSIXlt
+  6. Makes 4 diagrams as per project requirement.
+# Building plots
+To produce 
