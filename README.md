@@ -25,6 +25,7 @@ web site</a>:
 <li><b>Sub_metering_2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
+
 ## How it works
  Script plotting1.R  produce steps as below:
   1. Check if source data is in work directory.
@@ -34,6 +35,7 @@ web site</a>:
   5. changes Date and Time variables class to Date and POSIXlt
   6. Makes 4 diagrams as per project requirement.
   7. Cleans up envronment
+  
 ## Running script.
 1. Before run script make sure that you have at least 130 Mb of free space in your working directory.
 2. Source file plotting1.R 
@@ -42,10 +44,14 @@ web site</a>:
 4. As script results you will see plot files in PNG format.
    * Global Active Power frequency histogram - plot1.png
    * Global Active Power over time - plot2.png
-   * 
+   
 ## Samples
  Resulting plots should be similar to diagrams below:
 ## Plot1 
   ![Active power frequency histogram] (plot1.png)
 ## Plot2
   ![Global Active Power over time] (plot2.png)
+## Plot3 
+  ![Combined submetering diagram] (plot3.png)
+## Plot4
+  ![Multiplot diagram ] (plot4.png)
