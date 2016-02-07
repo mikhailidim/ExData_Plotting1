@@ -45,13 +45,24 @@ web site</a>:
    * Global Active Power frequency histogram - plot1.png
    * Global Active Power over time - plot2.png
    
-## Samples
+## Script results. 
  Resulting plots should be similar to diagrams below:
 ## Plot1 
   ![Active power frequency histogram] (plot1.png)
+
+File URL: [plot1.png](plot1.png)
+
 ## Plot2
   ![Global Active Power over time] (plot2.png)
+  
+File URL: [plot2.png](plot2.png)
+  
 ## Plot3 
   ![Combined submetering diagram] (plot3.png)
+  
+File URL: [plot3.png](plot3.png)
+  
 ## Plot4
   ![Multiplot diagram ] (plot4.png)
+  
+File URL: [plot4.png](plot4.png)
