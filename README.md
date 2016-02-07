@@ -33,5 +33,19 @@ web site</a>:
   4. Keeps data for Feb 1 and 2 2007 only.
   5. changes Date and Time variables class to Date and POSIXlt
   6. Makes 4 diagrams as per project requirement.
-# Building plots
-To produce 
+  7. Cleans up envronment
+## Running script.
+1. Before run script make sure that you have at least 130 Mb of free space in your working directory.
+2. Source file plotting1.R 
+   `>source('plotting.R')`
+3. You will get notification about execting steps. 
+4. As script results you will see plot files in PNG format.
+   * Global Active Power frequency histogram - plot1.png
+   * Global Active Power over time - plot2.png
+   * 
+## Samples
+ Resulting plots should be similar to diagrams below:
+## Plot1 
+  ![Active power frequency histogram] (plot1.png)
+## Plot2
+  ![Global Active Power over time] (plot2.png)
