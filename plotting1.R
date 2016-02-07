@@ -9,7 +9,7 @@ load_data<- function() {
  if( !file.exists(dsource)) { 
   #Identify method 
   tfile <- tempfile() 
-  dmethod <- switch(Sys.info()["sysname"], Linux="curl", Windows="wininet")
+  dmethod <- switch(Shistys.info()["sysname"], Linux="curl", Windows="wininet")
   # Download file
   download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
                 tfile, quiet=T,method = dmethod)
@@ -31,3 +31,27 @@ load_data<- function() {
   # Return result
   dset
 } 
+ # Create frequency histogram Plot1
+plot1 <- function(x) {
+  png("plot1.png",width = 480,height = 480) 
+  hist(x$Global_active_power, freq = T, 
+       main="Global Active Power",col="red", 
+       xlab = "Global Active Power (kilowatts)")
+  dev.off()
+}
+
+plot2<- function(x) {
+  png("plot2.png",width = 480,height = 480) 
+  plot(feb2007$Time,feb2007$Global_active_power,type='l', xlab = '',ylab = 'Global active Power (kilowatts)')
+  dev.off();
+}
+  
+message("Loading data    ...")
+feb2007<-load_data()
+message("Building Plot 1 ...")
+# Produce plot 1
+plot1(feb2007)
+
+# Produce plot 2
+message("Building Plot 2 ...")
+ plot2(feb2007)
